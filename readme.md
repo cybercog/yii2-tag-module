@@ -68,6 +68,7 @@ class PostTagController extends DefaultController
     {
         $this->modelClass = Post::className();
         $this->modelAttribute = 'tag';
+        $this->entityName = 'Tags';
         parent::init();
     }
 }

@@ -12,7 +12,7 @@ use Zelenin\yii\modules\Tag\Module;
 
 $this->title = Module::t('Create');
 echo Breadcrumbs::widget(['links' => [
-    ['label' => Module::t('Tags'), 'url' => ['index']],
+    ['label' => Module::t($this->context->entityName), 'url' => ['index']],
     $this->title
 ]]);
 ?>

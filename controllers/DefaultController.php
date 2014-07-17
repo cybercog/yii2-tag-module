@@ -20,6 +20,8 @@ class DefaultController extends Controller
     public $modelClass;
     /** @var string $modelAttribute */
     public $modelAttribute;
+    /** @var string $entityName */
+    public $entityName;
     /** @var string $viewsPath */
     public $viewsPath = '@Zelenin/yii/modules/Tag/views';
 

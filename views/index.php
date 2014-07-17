@@ -15,7 +15,7 @@ use yii\widgets\Pjax;
 use Zelenin\yii\modules\Tag\models\search\ItemSearch;
 use Zelenin\yii\modules\Tag\Module;
 
-$this->title = Module::t('Tags');
+$this->title = Module::t($this->context->entityName);
 echo Breadcrumbs::widget(['links' => [
     $this->title
 ]]);
