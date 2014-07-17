@@ -27,7 +27,7 @@ class Category extends ActiveRecord
             ['name', 'string', 'max' => 255],
             ['attribute', 'required'],
             ['attribute', 'string', 'max' => 255],
-            [['name', 'attribute'], 'unique', 'targetAttribute' => ['name', 'attribute'], 'message' => Module::t('The combination of Name and Attribute has already been taken.')]
+            [['name', 'attribute'], 'unique', 'targetAttribute' => ['name', 'attribute'], 'message' => Module::t('The combination of {0} and {1} has already been taken.', ['Name', 'Attribute'])]
         ];
     }
 

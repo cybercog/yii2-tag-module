@@ -2,8 +2,8 @@
 
 namespace Zelenin\yii\modules\Tag\models;
 
-use yii\db\ActiveQuery;
 use Yii;
+use yii\db\ActiveQuery;
 use yii\db\ActiveQueryInterface;
 use yii\db\ActiveRecord;
 use Zelenin\yii\modules\Tag\models\query\ItemQuery;
@@ -39,7 +39,7 @@ class Item extends ActiveRecord
             ['slug', 'string', 'max' => 255],
             ['category_id', 'required'],
             ['category_id', 'integer'],
-            [['slug', 'category_id'], 'unique', 'targetAttribute' => ['slug', 'category_id'], 'message' => Module::t('The combination of Slug and Category has already been taken.')]
+            [['slug', 'category_id'], 'unique', 'targetAttribute' => ['slug', 'category_id'], 'message' => Module::t('The combination of {0} and {1} has already been taken.', ['Slug', 'Category'])]
         ];
     }
 
