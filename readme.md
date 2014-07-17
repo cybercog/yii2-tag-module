@@ -79,12 +79,8 @@ Add widgets to view:
 
 ```php
 <div class="row">
-    <?= $form->field($model, 'tag', ['options' => ['class' => 'form-group col-sm-6']])->widget(Tag::className(), [
-        'multiple' => true
-    ]) ?>
-    <?= $form->field($model, 'category', ['options' => ['class' => 'form-group col-sm-6']])->widget(Tag::className(), [
-        'multiple' => false
-    ]) ?>
+    <?= $form->field($model, 'tag', ['options' => ['class' => 'form-group col-sm-6']])->widget(Tag::className(), []) ?>
+    <?= $form->field($model, 'category', ['options' => ['class' => 'form-group col-sm-6']])->widget(Tag::className(), []) ?>
 </div>
 ```
 
