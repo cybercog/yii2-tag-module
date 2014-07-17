@@ -18,7 +18,7 @@ class ItemQuery extends ActiveQuery
             'category' => function ($query) use ($name, $attribute) {
                     $categoryTableName = Category::tableName();
                     /** @var ActiveQuery $query */
-                    $query->where($categoryTableName . '.name = :name and ' . $categoryTableName . '.attribute = :attribute', [
+                    $query->andWhere($categoryTableName . '.name = :name and ' . $categoryTableName . '.attribute = :attribute', [
                         ':name' => $name,
                         ':attribute' => $attribute
                     ]);
