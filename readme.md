@@ -27,7 +27,7 @@ to the require section of your ```composer.json```
 Run:
 
 ```
-php yii migrate --migrationPath=@vendor/zelenin/yii2-tag-module/migrations
+php yii migrate --migrationPath=@Zelenin/yii/modules/Tag/migrations
 ```
 
 Add behavior to model:
